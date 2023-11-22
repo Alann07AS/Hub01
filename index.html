@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="static/css/style.css">
-    <script defer src="static/js/init.js"></script>
-    <script defer src="static/js/translate.js"></script>
-    <script src="static/translate/login_content.json" id="translations_login_content" data-lang="en"></script>
+    <script defer type="module" src="static/js/init.js"></script>
+    <!-- <script defer type="module" src="static/js/translate.js" ></script> -->
     <!-- <script src="static/translate/login_content.json" id="translations_login_content" data-lang="en"></script> -->
     <title>Hub01</title>
 </head>
@@ -16,13 +15,13 @@
     <content id="login_content" ><!--class="hide_content">-->
         <form action="javascript:void(0);">
 
-            <label for="log" id="name-mail-label" class="translate">Name or email</label>
+            <label for="log" id="name-mail-label" tl="credential_login_identifiant">Name or email</label>
             <input type="email" name="log" id="log">
 
-            <label for="pws" id="password-label" class="translate">Password</label>
+            <label for="pws" id="password-label" tl="credential_login_pwd">Password</label>
             <input type="password" name="pws" id="pws">
 
-            <button type="submit" class="translate">Login</button>
+            <button type="submit" id="login-button" tl="credential_login_bt">Login</button>
 
         </form>
     </content>
